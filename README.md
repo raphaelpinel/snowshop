@@ -27,3 +27,16 @@ install entity framework tools globally
 `dotnet ef -h` 
 Add Nuget Package `Microsoft.EntityFrameworkCore.Design` to use tools
 `dotnet ef migrations add InitialCreate -o Data/Migrations` Create first migration
+
+`dotnet ef database -h` shows 2 available commands: `drop` and `update`
+`dotnet ef database update` to create a database and install latest migration if not specified
+
+Shift Cmd P > Sqlite Open Database
+See database in Sqlite Explorer (right click > show table)
+In Sqlite Explorer, right click on `Products` > `new query [insert]`
+```
+-- SQLite
+INSERT INTO `Products` (Id, Name)
+VALUES (1, 'Product one'), (2, 'Product two'), (3, 'Product three');
+```
+right click > run query
