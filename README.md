@@ -9,3 +9,4 @@ An online shop made with a dotnet core API and Angular
 `dotnet sln list` lists projects to verify API has been added to solution
 `dotnet new gitignore --force` creates a gitignore file. Pass --force if you had already a gitignore file
 In VSCode with C# Extensions by jchannon: Shift Cmd P > .NET generate assets for Build and Debug
+`dotnet watch run -p API` watch for any site change and restart server every time
