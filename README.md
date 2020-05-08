@@ -21,3 +21,9 @@ Press on restore promt or run `dotnet restore`
 
 In API/Data/StoreContext.cs hover on the class name `StoreContext` press Cmd . and select `generate a constructor with options` and remove attributes
 In Startup.cs hover over Configuration, Cmd . > initialize field from parameter
+
+install entity framework tools globally
+`dotnet tool install --global dotnet-ef --version 3.1.201`
+`dotnet ef -h` 
+Add Nuget Package `Microsoft.EntityFrameworkCore.Design` to use tools
+`dotnet ef migrations add InitialCreate -o Data/Migrations` Create first migration
